@@ -14,14 +14,16 @@
  *= require_self
  */
 
-  /* fonts */
-  .wf-nicomoji { font-family: "Nico Moji"; }
+  /* Fonts */
+  .wf-nicomoji {
+    font-family: "Nico Moji";
+  }
 
   /*↓↓↓　bulma setting ↓↓↓*/
 
 @import "bulma";
 
-  /* header */
+  /* Header */
   .navbar {
     max-height: 5em;
     background-color: #87992f;
@@ -29,4 +31,11 @@
 
   .navbar-item {
     color: #f2a805;
+  }
+
+  /* Footer*/
+  .footer {
+    max-height: 6em;
+    padding:0 0;
+    background-color: #87992f;
   }
