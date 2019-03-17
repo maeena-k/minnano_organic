@@ -14,19 +14,19 @@
  *= require_self
  */
 
-/* fonts */
-.wf-nicomoji { font-family: "Nico Moji"; }
+  /* fonts */
+  .wf-nicomoji { font-family: "Nico Moji"; }
 
-/*↓↓↓　bulma setting ↓↓↓*/
+  /*↓↓↓　bulma setting ↓↓↓*/
 
- @import "bulma";
+@import "bulma";
 
- /* header */
- .navbar {
-   max-height: 5em;
-   background-color: #87992f;
- }
+  /* header */
+  .navbar {
+    max-height: 5em;
+    background-color: #87992f;
+  }
 
- .navbar-item {
-   color: #f2a805;
- }
+  .navbar-item {
+    color: #f2a805;
+  }
