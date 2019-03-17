@@ -14,6 +14,8 @@
  *= require_self
  */
 
+  /* Body */
+
   /* Fonts */
   .wf-nicomoji {
     font-family: "Nico Moji";
@@ -33,9 +35,27 @@
     color: #f2a805;
   }
 
-  /* Footer*/
+  /* Footer */
   .footer {
     max-height: 6em;
     padding:0 0;
     background-color: #87992f;
+  }
+
+  /* index top */
+  .keyvisual {
+    background-image: url(https://updatenewz.com/wp-content/uploads/2018/10/8748/b9808fa5-03e7-4393-bf82-8f05d2b51040-GettyImages-882314812.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 480px;
+    width: 100%;
+  }
+
+  .message {
+    background-color: transparent;
+  }
+
+  .title {
+    font-size: 4em;
+    color: white;
   }
