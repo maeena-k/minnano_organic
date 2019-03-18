@@ -13,49 +13,73 @@
  *= require_tree .
  *= require_self
  */
-
-  /* Body */
-
-  /* Fonts */
-  .wf-nicomoji {
-    font-family: "Nico Moji";
-  }
-
-  /*↓↓↓　bulma setting ↓↓↓*/
-
+/* Body */
+/* Fonts */
+.wf-nicomoji {
+  font-family: "Nico Moji";
+}
+/*↓↓↓　bulma setting ↓↓↓*/
 @import "bulma";
+/* Header */
+.navbar {
+  max-height: 5em;
+  background-color: #87992f;
+}
 
-  /* Header */
-  .navbar {
-    max-height: 5em;
-    background-color: #87992f;
-  }
+.navbar-item {
+  color: #f2a805;
+}
+/* Footer */
+.footer {
+  max-height: 6em;
+  padding: 0;
+  background-color: #87992f;
+}
+/* index top */
+.keyvisual {
+  background-image: url("https://updatenewz.com/wp-content/uploads/2018/10/8748/b9808fa5-03e7-4393-bf82-8f05d2b51040-GettyImages-882314812.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 480px;
+  width: 100%;
+}
 
-  .navbar-item {
-    color: #f2a805;
-  }
+.message {
+  background-color: transparent;
+}
 
-  /* Footer */
-  .footer {
-    max-height: 6em;
-    padding:0 0;
-    background-color: #87992f;
-  }
+.title {
+  font-size: 4em;
+  color: white;
+}
 
-  /* index top */
-  .keyvisual {
-    background-image: url(https://updatenewz.com/wp-content/uploads/2018/10/8748/b9808fa5-03e7-4393-bf82-8f05d2b51040-GettyImages-882314812.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-    min-height: 480px;
-    width: 100%;
-  }
+.feature {
+  max-height: 360px;
+  width: 100%;
+}
 
-  .message {
-    background-color: transparent;
-  }
+.level {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .title {
-    font-size: 4em;
-    color: white;
-  }
+.level-item {
+  width: 360px;
+  height: auto;
+}
+
+.subtitle {
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.icon {
+  height: auto;
+}
+
+.big {
+  font-size: 1.5em;
+}
