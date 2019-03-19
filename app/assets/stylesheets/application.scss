@@ -46,10 +46,16 @@
   background-position: 50% 50%;
   min-height: 480px;
   width: 100%;
+  height: auto;
+  position: relative;
 }
 
 .message {
   background-color: transparent;
+  padding-left: 2em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .is-big {
