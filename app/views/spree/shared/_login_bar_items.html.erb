@@ -1,1 +1,6 @@
-<%# solidus_auth_devise or a custom auth system can replace this partial %>
+<% if spree_current_user %>
+  <li><%= link_to I18n.t('spree.my_account'), spree.account_path %></li>
+  <li><%= link_to I18n.t('spree.logout'), spree.logout_path %></li>
+<% else %>
+  <li id="link-to-login"><%= link_to I18n.t('spree.login'), spree.login_path %></li>
+<% end %>
