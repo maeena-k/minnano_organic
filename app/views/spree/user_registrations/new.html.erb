@@ -1,16 +1,15 @@
 <%= render 'spree/shared/error_messages', target: resource %>
 
-<section class="new-customer section">
-  <div class="subtitle is-centered wf-nicomoji">Welcome to Minnano Organic!</div>
+<section class="customer section">
+  <div class="form container">
+    <p class="subtitle is-centered wf-nicomoji">Welcome to Minnano Organic!</p>
 
-  <div class="is-centered container">
-    <%= form_for resource, as: :spree_user, url: spree.registration_path(resource) do |f| %>
-      <div data-hook="signup_inside_form">
+    <div class="is-centered container">
+      <%= form_for resource, as: :spree_user, url: spree.registration_path(resource) do |f| %>
         <%= render partial: 'spree/shared/user_form', locals: { f: f } %>
         <p><%= f.submit 'Sign up', class: 'button primary wf-nicomoji' %></p>
-      </div>
-    <% end %>
+      <% end %>
       <p class="description">Or already have an account? => <%= link_to 'Login', spree.login_path %></p>
+    </div>
   </div>
-
 </section>

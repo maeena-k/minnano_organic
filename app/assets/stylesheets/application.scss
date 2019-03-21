@@ -116,3 +116,17 @@
 .description {
   font-size: 0.8em;
 }
+
+/* Signup & Login */
+.customer {
+  position: relative;
+  width: 100%;
+  height: 560px;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 16px;
+}

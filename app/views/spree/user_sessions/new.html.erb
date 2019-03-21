@@ -3,11 +3,16 @@
 <% end %>
 
 <% @body_id = 'login' %>
-<div id="existing-customer">
-  <h6><%= I18n.t('spree.login_as_existing') %></h6>
-  <div data-hook="login">
-    <%= render partial: 'spree/shared/login' %>
-    <%= I18n.t('spree.or') %>&nbsp;<%= link_to I18n.t('spree.create_a_new_account'), spree.signup_path %> | <%= link_to I18n.t('spree.forgot_password'), spree.recover_password_path %>
+
+<%= render 'spree/shared/error_messages', target: resource %>
+
+<section class="customer section">
+  <div class="form container">
+    <p class="subtitle is-centered wf-nicomoji">Welcome Back to Minnano Organic!</p>
+
+    <div class="is-centered container">
+      <%= render partial: 'spree/shared/login' %>
+      <p class="description">Or <%= link_to 'Create a new account', spree.signup_path %> / <%= link_to 'Forgot your password?', spree.recover_password_path %></p>
+    </div>
   </div>
-</div>
-<div data-hook="login_extras"></div>
+</section>
