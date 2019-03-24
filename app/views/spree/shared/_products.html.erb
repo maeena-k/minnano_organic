@@ -25,16 +25,19 @@
   <div class="products-listing">
     <% products.each do |product| %>
       <% url = spree.product_path(product, taxon_id: @taxon.try(:id)) %>
-      <div clss="product-box">
-        <div class="product-image">
-          <%= image_tag product.display_image.attachment(:product) %>
-        </div>
-        <div class="product-briefinfo">
-          <%= link_to product_path(product.id) do%>
-            <p class="product-name"><%= product.name %></p>
-          <% end %>
-          <p class="product-price"><%= product.display_price %></p>
-        </div>
+      <div class="product-box">
+          <p class="porduct-image">
+            <%= link_to product_path(product.id) do%>
+             <%= image_tag product.display_image.attachment(:product) %>
+            <% end %>
+          </p>
+          <p class="product-name wf-nicomoji">
+            <%= link_to product_path(product.id) do%>
+              <%= product.name %>
+            <% end %>
+          </p>
+          <p class="product-price wf-nicomoji"><%= product.display_price %></p>
+      </div>
     <% end %>
     <% reset_cycle("classes") %>
   </div>
