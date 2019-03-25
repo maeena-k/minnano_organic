@@ -1,12 +1,11 @@
-<% if flash[:alert] %>
-  <div class="flash errors"><%= flash[:alert] %></div>
-<% end %>
-
 <% @body_id = 'login' %>
 
 <%= render 'spree/shared/error_messages', target: resource %>
 
 <section class="customer is-centered section">
+  <% if flash[:alert] %>
+    <div class="flash errors"><%= flash[:alert] %></div>
+  <% end %>
   <div class="form is-centered container">
     <p class="subtitle wf-nicomoji">Welcome Back to <br>Minnano Organic!</p>
 
