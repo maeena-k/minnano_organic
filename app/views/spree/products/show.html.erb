@@ -1,4 +1,4 @@
-<% cache [I18n.locale, current_pricing_options, @product] do %>
+<section class="product-index section">
   <div data-hook="product_show" itemscope itemtype="http://schema.org/Product">
     <% @body_id = 'product-details' %>
 
@@ -7,15 +7,19 @@
 
         <div id="product-images" data-hook="product_images">
           <div id="main-image" data-hook>
-            <%= render partial: 'image' %>
+            <% @product.images.each_with_index do |image, i| %>
+              <div class="item<%= " active" if i.zero? %>" data-thumb="<%= i %>">
+                <%= image_tag image.attachment(:large) %>
+              </div>
+            <% end %>
           </div>
           <div id="thumbnails" data-hook>
-            <%= render partial: 'thumbnails' %>
+            <% @product.images.each_with_index do |image, i| %>
+              <div data-target="#carousel" data-slide-to="<%= i %>" class="thumb">
+                <%= image_tag image.attachment(:small) %>
+              </div>
+            <% end %>
           </div>
-        </div>
-
-        <div data-hook="product_properties">
-          <%= render partial: 'properties' %>
         </div>
 
         <div data-hook="promotions">
@@ -48,4 +52,4 @@
     </div>
 
   </div>
-<% end %>
+</section>
