@@ -59,3 +59,4 @@ Spree::Api::Config.configure do |config|
 end
 
 Spree.user_class = "Spree::LegacyUser"
+Spree::PermittedAttributes.user_attributes << :name
