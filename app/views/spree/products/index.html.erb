@@ -1,4 +1,4 @@
-<section class="product-index section">
+<div class="product-index">
   <% content_for :sidebar do %>
     <div class="sidebar">
       <% if "spree/products" == params[:controller] && @taxon %>
@@ -24,6 +24,6 @@
     <div class="products">
       <%= render partial: 'spree/shared/products', locals: { products: @products, taxon: @taxon } %>
     </div>
-    
+
   <% end %>
-</section>
+</div>

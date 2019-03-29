@@ -1,24 +1,9 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 /* Fonts */
 .wf-nicomoji {
   font-family: "Nico Moji";
 }
-/*↓↓↓　bulma setting ↓↓↓*/
-@import "bulma";
+/*↓↓↓　bootstrap setting ↓↓↓*/
+@import "bootstrap";
 /* Header */
 .header {
   max-height: 5em;
@@ -28,18 +13,39 @@
   z-index: 10;
 }
 
-.navbar-item {
-  color: #f2a805;
+.font-grey {
+  color: #4d4d4d;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.btn-custom {
+  background-color: #e6e6e6;
+  text-align: center;
+}
+@media screen and (max-width:768px) {
+  .navbar-collapse {
+    background-color: #ffffff;
+  }
+
+  .indent {
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
 }
 /* Footer */
 .footer {
   max-height: 6em;
-  padding: 0;
+  padding: 8px;
   background-color: #87992f;
+  width: 100%;
 }
 
 .copyright {
-  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
 }
 /* index top */
 .keyvisual {
@@ -62,11 +68,13 @@
 .is-big {
   width: 200px;
   font-size: 1.5em;
+  padding: 16px 24px;
 }
 
 .title {
   font-size: 4em;
   color: white;
+  margin-bottom: 8px;
 }
 
 .feature {
@@ -86,6 +94,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  color: #383838;
 }
 
 .level-item {
@@ -95,9 +104,8 @@
 
 .subtitle {
   font-size: 2em;
-  color: #383838;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .icon {
@@ -115,31 +123,51 @@
 .description {
   font-size: 0.8em;
 }
-
 /* Signup & Login */
 .customer {
   position: relative;
   width: 100%;
   max-width: 480px;
   height: 560px;
-  margin: 0 auto 0 auto;
-
+  margin: 0 auto;
 }
 
 .form {
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  margin-top: 16px;
+  margin: 8px auto;
 }
 
-.field,.form-item, .input {
+.has-feedback {
+  position: relative;
+}
+
+.form-control {
+  padding-left: 2em;
+}
+
+.form-control-feedback {
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%);
+  padding-left: 2em;
+}
+
+.form-group {
+  width: 100%;
+  margin: 0 auto 8px;
+  max-width: 350px;
+}
+
+.form-item,
+.input {
   width: 100%;
   margin: 0 auto;
   max-width: 350px;
 }
-
 /* Products */
 .product-index {
   width: 100%;
@@ -165,5 +193,4 @@
   margin-bottom: 16px;
   text-align: center;
 }
-
 /* Indivisual Product */

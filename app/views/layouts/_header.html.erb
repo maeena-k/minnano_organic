@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <nav class="header navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
@@ -37,33 +38,25 @@
         </div>
       </div>
     </div>
+=======
+<nav class="header navbar navbar-expand-lg">
+  <a class="navbar-brand" href="/">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Organic_V_color_size_4.png" width="75" height="50" style="background: white;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link wf-nicomoji font-grey indent" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link wf-nicomoji font-grey indent" href="#">About</a>
+      </li>
+    </ul>
+    <a class="btn btn-custom wf-nicomoji font-grey indent" href='/signup'>Signup</a>
+>>>>>>> 34828d12221f4a27c579de25aeabebc9a6617a93
   </div>
 </nav>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-      // Add a click event on each of them
-      $navbarBurgers.forEach(el => {
-        el.addEventListener('click', () => {
-
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-
-        });
-      });
-    }
-
-  });
-</script>
