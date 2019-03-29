@@ -1,24 +1,9 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 /* Fonts */
 .wf-nicomoji {
   font-family: "Nico Moji";
 }
-/*↓↓↓　bulma setting ↓↓↓*/
-@import "bulma";
+/*↓↓↓　bootstrap setting ↓↓↓*/
+@import "bootstrap";
 /* Header */
 .header {
   max-height: 5em;
@@ -115,31 +100,31 @@
 .description {
   font-size: 0.8em;
 }
-
 /* Signup & Login */
 .customer {
   position: relative;
   width: 100%;
   max-width: 480px;
   height: 560px;
-  margin: 0 auto 0 auto;
-
+  margin: 0 auto;
 }
 
 .form {
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   margin-top: 16px;
 }
 
-.field,.form-item, .input {
+.field,
+.form-item,
+.input {
   width: 100%;
   margin: 0 auto;
   max-width: 350px;
 }
-
 /* Products */
 .product-index {
   width: 100%;
@@ -165,5 +150,4 @@
   margin-bottom: 16px;
   text-align: center;
 }
-
 /* Indivisual Product */
