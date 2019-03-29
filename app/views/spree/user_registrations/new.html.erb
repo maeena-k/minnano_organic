@@ -9,7 +9,7 @@
         <%= render partial: 'spree/shared/user_form', locals: { f: f } %>
         <p><%= f.submit 'Sign up', class: 'btn btn-custom font-grey primary wf-nicomoji' %></p>
       <% end %>
-      <p class="form-item description">Or already have an account? => <%= link_to 'Login', spree.login_path %></p>
+      <p class="form-item description">Or already have an account? => <%= link_to 'Login', spree.login_path, class: 'font-grey' %></p>
     </div>
   </div>
 </div>
