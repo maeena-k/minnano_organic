@@ -39,6 +39,7 @@
   max-height: 6em;
   padding: 8px;
   background-color: #87992f;
+  width: 100%;
 }
 
 .copyright {
@@ -66,11 +67,13 @@
 .is-big {
   width: 200px;
   font-size: 1.5em;
+  padding: 16px 24px;
 }
 
 .title {
   font-size: 4em;
   color: white;
+  margin-bottom: 8px;
 }
 
 .feature {
@@ -90,6 +93,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  color: #383838;
 }
 
 .level-item {
@@ -99,9 +103,8 @@
 
 .subtitle {
   font-size: 2em;
-  color: #383838;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .icon {
