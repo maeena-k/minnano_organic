@@ -2,7 +2,7 @@
 
 <%= render 'spree/shared/error_messages', target: resource %>
 
-<div class="customer">
+<section class="customer">
   <div class="form container font-grey">
     <% if flash[:alert] %>
       <div class="alert alert-danger"><%= flash[:alert] %></div>
@@ -15,4 +15,4 @@
       <p class="form-item description">Or <%= link_to 'Create a new account', spree.signup_path, class: 'font-grey' %> / <%= link_to 'Forgot your password?', spree.recover_password_path, class: 'font-grey' %></p>
     </div>
   </div>
-</div>
+</section>
