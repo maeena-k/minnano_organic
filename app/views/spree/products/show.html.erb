@@ -1,0 +1,43 @@
+<section class="product-index">
+  <div data-hook="product_show" itemscope itemtype="http://schema.org/Product">
+    <% @body_id = 'product-details' %>
+
+      <div class="media">
+        <div id="carousel" class="carousel slide media-column media-column-left" data-ride="carousel">
+          <div class="carousel-inner">
+            <% @product.images.each_with_index do |image, i| %>
+              <div class="carousel-item<%= " active" if i.zero? %>" data-slide-to="<%= i %>">
+                <%= image_tag image.attachment(:large) %>
+              </div>
+            <% end %>
+          </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="media-column media-column-middle">
+          <ul class="list-inline">
+            <li>
+              <a href="../products" class="wf-nicomoji">
+                <i class="fa fa-reply" aria-hidden="true"></i> Back to product list
+              </a>
+            </li>
+          </ul>
+          <h2 class="wf-nicomoji"><%= @product.name %></h2>
+          <h3 class="wf-nicomoji"><%= @product.display_price %></h3>
+          <p class="discription"><%= @product.description %></p>
+        </div>
+        <div id="cart-form" data-hook="cart_form" class="media-column media-column-right">
+          <%= render partial: 'cart_form' %>
+        </div>
+      </div>
+      <%= render partial: 'taxons' %>
+
+    </div>
+  </div>
+</section>

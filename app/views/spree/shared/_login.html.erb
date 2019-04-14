@@ -1,0 +1,25 @@
+<%= form_for Spree::User.new, as: :spree_user, url: spree.create_new_session_path do |f| %>
+
+  <div class="form-group">
+    <%= f.label :email, 'Email', class: 'control-label wf-nicomoji' %>
+    <div class="form-item has-feedback">
+      <%= f.email_field :email, class: 'form-control', type: 'email', placeholder: 'e.g. hogehoge@gmail.com', tabindex: 1 %>
+      <i class="fas fa-envelope form-control-feedback"></i>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password, 'Password', class: 'control-label wf-nicomoji' %>
+    <div class="form-item has-feedback">
+      <%= f.password_field :password, class: 'form-control', type: 'password', tabindex: 2 %>
+      <i class="fas fa-lock form-control-feedback"></i>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= f.check_box :remember_me, tabindex: 3 %>
+    <%= f.label :remember_me, 'Remember me' %>
+  </div>
+
+  <p><%= f.submit 'Login', class: 'btn btn-custom primary wf-nicomoji', tabindex: 4 %></p>
+<% end %>

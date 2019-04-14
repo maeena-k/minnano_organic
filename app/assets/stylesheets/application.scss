@@ -1,0 +1,270 @@
+/* Fonts */
+.wf-nicomoji {
+  font-family: "Nico Moji";
+}
+/*↓↓↓　bootstrap setting ↓↓↓*/
+@import "bootstrap";
+/* Header */
+.header {
+  max-height: 5em;
+  height: auto;
+  width: 100%;
+  background-color: #87992f;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.font-grey {
+  color: #4d4d4d;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+@media screen and (max-width:768px) {
+  .navbar-collapse {
+    background-color: #ffffff;
+  }
+
+  .indent {
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.btn-custom {
+  background-color: #e6e6e6;
+  text-align: center;
+  margin-right: 8px;
+}
+/* Footer */
+.footer {
+  max-height: 6em;
+  padding: 8px;
+  background-color: #87992f;
+  width: 100%;
+  height:auto
+}
+
+.copyright {
+  text-align: center;
+  vertical-align: middle;
+}
+/* index top */
+.keyvisual {
+  background-image: url("http://vanderbiltpoliticalreview.com/wp-content/uploads/iStock-589415708.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 480px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.message {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.is-big {
+  width: 200px;
+  font-size: 1.5em;
+  padding: 16px 24px;
+}
+
+.title {
+  font-size: 4em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.feature {
+  width: 100%;
+  height: auto;
+  padding: 24px;
+  position: relative;
+}
+
+.feature-item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.level {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #383838;
+}
+
+.level-item {
+  width: 360px;
+  height: auto;
+}
+
+.subtitle {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.icon {
+  height: auto;
+}
+
+.big {
+  font-size: 1.5em;
+}
+
+.heading {
+  font-size: 1.2em;
+}
+
+.description {
+  font-size: 0.8em;
+}
+/* Signup & Login */
+.customer {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  height: 560px;
+  margin: 0 auto;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 8px auto;
+  padding-top: 48px;
+}
+
+.has-feedback {
+  position: relative;
+}
+
+.form-control {
+  padding-left: 2em;
+}
+
+.form-control-feedback {
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%);
+  padding-left: 2em;
+}
+
+.form-group {
+  width: 100%;
+  margin: 0 auto 8px;
+  max-width: 350px;
+}
+
+.form-item,
+.input {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 350px;
+}
+/* Products */
+.product-index {
+  width: 95%;
+  height: auto;
+  padding-top: 84px;
+  padding-bottom: 32px;
+  margin: 0 auto;
+}
+
+.products-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-box {
+  height: auto;
+  min-width: 30%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+/* Indivisual Product */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234d4d4d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234d4d4d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-item img {
+  width: 100%;
+  border: solid 2px #f0f0f0;
+}
+
+.add-to-cart-item {
+  width: 16%;
+}
+
+.media {
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+.media-column-middle ul,
+h2,
+h3,
+li,
+p {
+  width: 100%;
+}
+@media screen and (min-width:768px) {
+  .media-column-left {
+    width: 30%;
+  }
+
+  .media-column-middle {
+    width: 40%;
+  }
+
+  .media-column-right {
+    width: 20%;
+  }
+}
+
+/* oreders page */
+.cart_container {
+  width: 95%;
+  height: auto;
+  padding-top: 80px;
+  margin: 0 auto;
+}

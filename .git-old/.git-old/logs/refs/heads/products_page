@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 d0f76ea70e3515a39ae995a5b3a5bd8d726f8709 Jumpei Kawashima <pei.kureni@me.com> 1553270300 +0900	branch: Created from HEAD
+d0f76ea70e3515a39ae995a5b3a5bd8d726f8709 a14d105622799d255dabbcf63aeae8e6853ef649 Jumpei Kawashima <pei.kureni@me.com> 1553349580 +0900	commit: added link to product index page from index top
+a14d105622799d255dabbcf63aeae8e6853ef649 1426abedfc252e26251f4d42c6beb374786f274a Jumpei Kawashima <pei.kureni@me.com> 1553351616 +0900	commit: modified css in products index page view
+1426abedfc252e26251f4d42c6beb374786f274a b435c8adc427f793ce141fc82d4be19566e73157 Jumpei Kawashima <pei.kureni@me.com> 1553439519 +0900	commit: modified view and css for products index display
+b435c8adc427f793ce141fc82d4be19566e73157 72f9a688b81ddf14897327fe86862edd71c5a78a Jumpei Kawashima <pei.kureni@me.com> 1553442546 +0900	commit: flex box applied to products index
+72f9a688b81ddf14897327fe86862edd71c5a78a 6ab7b4c8c5c2b9ade79a1360fd4cf1dc2c065d13 Jumpei Kawashima <pei.kureni@me.com> 1553443003 +0900	commit: added textalign:center in css for products display on products index
+6ab7b4c8c5c2b9ade79a1360fd4cf1dc2c065d13 3b8a7aa72377b278fa08a1401c01ebf70dad5ccb Jumpei Kawashima <pei.kureni@me.com> 1553525668 +0900	commit: modified password reset view
