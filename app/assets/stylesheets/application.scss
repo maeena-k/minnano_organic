@@ -6,15 +6,25 @@
 @import "bootstrap";
 /* Header */
 .header {
-  max-height: 5em;
-  height: auto;
-  width: 100%;
+  height: 5em;
   background-color: #87992f;
   position: fixed;
-  z-index: 10;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.header-left {
+  width: 50%;
+  justify-content: flex-start;
+  z-index: 10;
+}
+
+.header-right {
+  width: 50%;
+  margin-left: 50%;
+  padding-right: 4px;
+  justify-content: flex-end;
+  z-index: 10;
 }
 
 .font-grey {
