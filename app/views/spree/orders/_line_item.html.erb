@@ -4,7 +4,7 @@
     <p class="line-itm-image"><%= link_to(render('spree/shared/image',
                          image: (variant.gallery.images.first || variant.product.gallery.images.first),
                          size: :small), variant.product) %></p>
-    <p class="line-itm-name"><%= link_to line_item.name, product_path(variant.product), class: 'font-grey' %></p>
+    <p class="line-itm-name wf-nicomoji"><%= link_to line_item.name, product_path(variant.product), class: 'font-grey' %></p>
       <%= variant.options_text %>
       <% if line_item.insufficient_stock? %>
         <span class="out-of-stock">
@@ -12,7 +12,7 @@
         </span>
       <% end %>
       <p class="line-itm-quantity"><%= item_form.number_field :quantity, min: 0, class: 'quantity-form' %></p>
-      <p class="line-itm-total"><%= line_item.display_amount.to_html unless line_item.quantity.nil? %></p>
+      <p class="line-itm-total wf-nicomoji"><%= line_item.display_amount.to_html unless line_item.quantity.nil? %></p>
   </div>
   <hr>
 <% end %>
