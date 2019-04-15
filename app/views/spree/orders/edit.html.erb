@@ -10,27 +10,28 @@
 
     <% else %>
 
-        <%= form_for @order, url: update_cart_path, html: {id: 'update-cart'} do |order_form| %>
-        <div class='checkout-link'>
-          <h2 class="wf-nicomoji">Total: <%= @order.display_total %></h2>
-          <%= button_tag class: 'btn btn-custom primary wf-nicomoji', id: 'checkout-link', name: 'checkout' do %>
-            <%= t('spree.checkout') %>
-          <% end %>
-        </div>
-        <hr>
-        <div class="cart-form">
-          <%= render 'spree/orders/form', order_form: order_form %>
-          <%= button_tag t("spree.update"), class: "btn btn-custom wf-nicomoji", id: "update-button" %>
-
-        </div>
+      <%= form_for @order, url: update_cart_path, html: {id: 'update-cart'} do |order_form| %>
+      <div class='checkout-link'>
+        <h2 class="wf-nicomoji">Total:
+          <%= @order.display_total %>
+        </h2>
+        <%= button_tag class: 'btn btn-custom primary wf-nicomoji', id: 'checkout-link', name: 'checkout' do %>
+        <%= t('spree.checkout') %>
+      <% end %>
+      </div>
+      <hr>
+      <div class="cart-form">
+        <%= render 'spree/orders/form', order_form: order_form %>
+        <%= button_tag t("spree.update"), class: "btn btn-custom wf-nicomoji", id: "update-button" %>
+      </div>
       <% end %>
 
-    <div class="empty-cart">
-      <%= form_tag empty_cart_path, method: :put do %>
-        <p><%= submit_tag t('spree.empty_cart'), class: 'btn btn-custom wf-nicomoji' %></p>
-        <p><%= link_to t('spree.continue_shopping'), products_path, class: 'btn btn-custom wf-nicomoji' %></p>
-      <% end %>
-    </div>
+      <div class="empty-cart">
+        <%= form_tag empty_cart_path, method: :put do %>
+          <p><%= submit_tag t('spree.empty_cart'), class: 'btn btn-custom wf-nicomoji' %></p>
+          <p><%= link_to t('spree.continue_shopping'), products_path, class: 'btn btn-custom wf-nicomoji' %></p>
+        <% end %>
+      </div>
 
     <% end %>
   </section>
