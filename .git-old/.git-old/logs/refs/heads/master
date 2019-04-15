@@ -1,2 +1,0 @@
-0000000000000000000000000000000000000000 221122c80de55ba51f29335a23855c9235fb8c39 Jumpei Kawashima <pei.kureni@me.com> 1552708705 +0900	commit (initial): create a new app with solidus
-221122c80de55ba51f29335a23855c9235fb8c39 009f28a461d138ffabf29475e5219fa079603bc1 Jumpei Kawashima <pei.kureni@me.com> 1552783594 +0900	commit: changed database setting for heroku deploy
