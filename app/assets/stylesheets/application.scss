@@ -1,7 +1,8 @@
-/* Fonts */
+/* Global */
 .wf-nicomoji {
   font-family: "Nico Moji";
 }
+
 /*↓↓↓　bootstrap setting ↓↓↓*/
 @import "bootstrap";
 /* Header */
@@ -237,8 +238,9 @@
   border: solid 2px #f0f0f0;
 }
 
-.add-to-cart-item {
-  width: 16%;
+.quantity-form {
+  width: 20%;
+  border: solid 1px #e6e6e6;
 }
 
 .media {
@@ -272,9 +274,74 @@ p {
 }
 
 /* oreders page */
-.cart_container {
+.cart-container {
   width: 95%;
   height: auto;
   padding-top: 80px;
   margin: 0 auto;
+}
+
+.cart-form {
+  width: 100%;
+  margin: 0 auto 16px;
+}
+
+.line-item {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (min-width:768px) {
+  .checkout-link {
+    width: 100%;
+    margin: 0 auto 8px;
+  }
+
+  .line-itm-image {
+    width: 20%;
+  }
+
+  .line-itm-name {
+    width: 40%;
+  }
+
+  .line-itm-quantity {
+    width: 20%;
+  }
+
+  .line-itm-total {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .checkout-link {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 8px;
+  }
+
+  .line-itm-image {
+    width: 40%;
+  }
+
+  .line-itm-name {
+    width: 50%;
+  }
+
+  .line-itm-quantity {
+    width: 50%;
+  }
+
+  .line-itm-total {
+    width: 40%;
+  }
+}
+
+.empty-cart {
+  width: 95%;
 }
