@@ -349,15 +349,27 @@ p {
 
 /* filter */
 .filter {
-  width: 80%;
+  width: 100%;
   height: auto;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .filter-nav {
-  width: 80%;
+  width: 95%;
   display: flex;
-  margin-left: 20%;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .filter-nav-item {
+  width: 30%;
+}
+
+.collapseItem {
+  width: 100%;
+}
+
+.collapseItem li {
+  list-style: none;
 }
