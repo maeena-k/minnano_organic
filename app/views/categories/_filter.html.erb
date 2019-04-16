@@ -1,7 +1,7 @@
-<nav class="sidebar wf-nicomoji">
-  <ul class="nav navbar-nav side-nav">
-    <% @taxonomies.each do |taxonomy| %>
-      <li>
+<nav class="filter wf-nicomoji">
+  <div class="nav navbar-nav filter-nav">
+    <% taxonomies.each do |taxonomy| %>
+      <div class="filter-nav-item">
         <a href="javascript:;" class="font-grey" data-toggle="collapse" data-target="#taxonomy-<%= taxonomy.id %>"><%= taxonomy.name %>
           <i class="fa fa-plus"></i>
         </a>
@@ -33,7 +33,7 @@
             <% end %>
           <% end %>
         </ul>
-      </li>
+      </div>
     <% end %>
-  </ul>
+  </div>
 </nav>
