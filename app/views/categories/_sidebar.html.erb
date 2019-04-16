@@ -1,0 +1,39 @@
+<nav class="sidebar wf-nicomoji">
+  <ul class="nav navbar-nav side-nav">
+    <% @taxonomies.each do |taxonomy| %>
+      <li>
+        <a href="javascript:;" class="font-grey" data-toggle="collapse" data-target="#taxonomy-<%= taxonomy.id %>"><%= taxonomy.name %>
+          <i class="fa fa-plus"></i>
+        </a>
+        <ul id="taxonomy-<%= taxonomy.id %>" class="collapse collapseItem">
+          <% taxonomy.root.children.each do |taxon| %>
+            <% if taxon.children.empty? %>
+              <li>
+                <%= link_to category_path(taxon.id), class:'font-grey' do %>
+                  <%= taxon.name %>
+                  <span>（<%= taxon.products.count %>）</span>
+                <% end %>
+              </li>
+            <% else %>
+              <li>
+                <a href="javascript:;" class="font-grey" data-toggle="collapse" data-target="#taxon-<%= taxon.id %>"><%= taxon.name %>
+                  <i class="fa fa-plus"></i>
+                </a>
+                <ul id="taxon-<%= taxon.id %>" class="collapse collapseItem" style="text-indent: 0.1em;">
+                  <% taxon.children.each do |subtaxon| %>
+                    <li>
+                      <%= link_to category_path(subtaxon.id), class:'font-grey' do %>
+                        <%= subtaxon.name %>
+                        <span>（<%= subtaxon.products.count %>）</span>
+                      <% end %>
+                    </li>
+                  <% end %>
+                </ul>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
+</nav>
