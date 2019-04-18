@@ -19,7 +19,7 @@
                 <a href="javascript:;" class="font-grey" data-toggle="collapse" data-target="#taxon-<%= taxon.id %>"><%= taxon.name %>
                   <i class="fa fa-plus"></i>
                 </a>
-                <ul id="taxon-<%= taxon.id %>" class="collapse collapseItem" style="text-indent: 0.1em;">
+                <ul id="taxon-<%= taxon.id %>" class="collapse collapseItem" style="text-indent: 0.1em;>
                   <% taxon.children.each do |subtaxon| %>
                     <li>
                       <%= link_to category_path(subtaxon.id), class:'font-grey' do %>
