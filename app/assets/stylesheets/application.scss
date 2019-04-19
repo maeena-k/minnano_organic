@@ -358,12 +358,19 @@ p {
 
   .filter-nav-item {
     width: 33%;
+    margin: 0 auto;
   }
 
   .collapseItem {
-    margin: 0 auto;
-    padding-left: 30%;
+
   }
+  .collapseItem li {
+    list-style: none;
+    text-indent: 0.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .collapseItem li {
     list-style: none;
     text-align: left;

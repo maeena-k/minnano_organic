@@ -2,10 +2,10 @@
   <div class="nav filter-nav">
     <% taxonomies.each do |taxonomy| %>
       <div class="filter-nav-item">
-        <a href="javascript:;" class="font-grey btn btn-custom filter-btn" data-toggle="collapse" data-target="#taxonomy-<%= taxonomy.id %>"><%= taxonomy.name %>
+        <a href="javascript:;" class="font-grey btn btn-custom" data-toggle="collapse" data-target="#taxonomy-<%= taxonomy.id %>"><%= taxonomy.name %>
           <i class="fa fa-plus"></i>
         </a>
-        <ul id="taxonomy-<%= taxonomy.id %>" class="collapse collapseItem">
+        <div id="taxonomy-<%= taxonomy.id %>" class="collapse collapseItem description">
           <% taxonomy.root.children.each do |taxon| %>
             <% if taxon.children.empty? %>
               <li>
@@ -30,7 +30,7 @@
               </li>
             <% end %>
           <% end %>
-        </ul>
+        </div>
       </div>
     <% end %>
   </div>
