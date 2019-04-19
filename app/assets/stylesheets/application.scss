@@ -2,7 +2,6 @@
 .wf-nicomoji {
   font-family: "Nico Moji";
 }
-
 /*↓↓↓　bootstrap setting ↓↓↓*/
 @import "bootstrap";
 /* Header */
@@ -69,7 +68,7 @@
   padding: 8px;
   background-color: #87992f;
   width: 100%;
-  height:auto
+  height: auto;
 }
 
 .copyright {
@@ -272,7 +271,6 @@ p {
     width: 20%;
   }
 }
-
 /* oreders page */
 .cart-container {
   width: 95%;
@@ -294,7 +292,6 @@ p {
   justify-content: space-around;
   align-items: center;
 }
-
 @media screen and (min-width:768px) {
   .checkout-link {
     width: 100%;
@@ -317,7 +314,6 @@ p {
     width: 20%;
   }
 }
-
 @media screen and (max-width:767px) {
   .checkout-link {
     width: 100%;
@@ -345,31 +341,32 @@ p {
 .empty-cart {
   width: 95%;
 }
-
-
 /* filter */
 .filter {
-  width: 100%;
+  width: 95%;
   height: auto;
   text-align: center;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
 }
+@media screen and (min-width: 768px) {
+  .filter-nav {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
 
-.filter-nav {
-  width: 95%;
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-}
+  .filter-nav-item {
+    width: 33%;
+  }
 
-.filter-nav-item {
-  width: 30%;
-}
-
-.collapseItem {
-  width: 100%;
-}
-
-.collapseItem li {
-  list-style: none;
+  .collapseItem {
+    margin: 0 auto;
+    padding-left: 30%;
+  }
+  .collapseItem li {
+    list-style: none;
+    text-align: left;
+    width: 100%;
+  }
 }
