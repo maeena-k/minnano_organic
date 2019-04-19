@@ -361,9 +361,6 @@ p {
     margin: 0 auto;
   }
 
-  .collapseItem {
-
-  }
   .collapseItem li {
     list-style: none;
     text-indent: 0.5em;
@@ -371,9 +368,21 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  .filter-nav {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .filter-nav-item {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
   .collapseItem li {
     list-style: none;
     text-align: left;
     width: 100%;
+    text-indent: 0.5em;
   }
 }
