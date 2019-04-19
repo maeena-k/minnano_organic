@@ -2,10 +2,12 @@
 .wf-nicomoji {
   font-family: "Nico Moji";
 }
+
 /*↓↓↓　bootstrap setting ↓↓↓*/
 @import "bootstrap";
 /* Header */
 .header {
+  width: 100%;
   height: 5em;
   background-color: #87992f;
   position: fixed;
@@ -32,6 +34,7 @@
 }
 
 .nav-right {
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -39,14 +42,27 @@
 }
 
 .nav-left {
+  width: 50%;
   display: flex;
   align-items: center;
+}
+
+.navbar-brand img {
+  width: 75px;
+  height: 50px;
+}
+
+@media screen and (max-width:320px) {
+  .navbar-brand img {
+    width: 50px;
+    height: 33px;
+  }
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .navbar-collapse {
     background-color: #ffffff;
   }
@@ -60,7 +76,6 @@
 .btn-custom {
   background-color: #e6e6e6;
   text-align: center;
-  margin-right: 8px;
 }
 /* Footer */
 .footer {
