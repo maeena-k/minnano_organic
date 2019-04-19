@@ -41,12 +41,6 @@
   margin-right: 4px;
 }
 
-.nav-left {
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
-
 .navbar-brand img {
   width: 75px;
   height: 50px;
@@ -54,15 +48,15 @@
 
 @media screen and (max-width:320px) {
   .navbar-brand img {
-    width: 50px;
-    height: 33px;
+    width: 51px;
+    height: 34px;
   }
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
   .navbar-collapse {
     background-color: #ffffff;
   }
@@ -115,7 +109,7 @@
 }
 
 .title {
-  font-size: 4em;
+  font-size: 3.5em;
   color: #ffffff;
   margin-bottom: 8px;
 }
@@ -140,11 +134,19 @@
   color: #383838;
 }
 
+@media screen and (min-width: 769px){
 .level-item {
-  width: 360px;
+  width: 30%;
   height: auto;
 }
+}
 
+@media screen and (max-width: 768px){
+.level-item {
+  width: 100%;
+  height: auto;
+}
+}
 .subtitle {
   font-size: 2em;
   text-align: center;
