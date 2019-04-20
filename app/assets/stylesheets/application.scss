@@ -7,6 +7,11 @@
   color: #4d4d4d;
 }
 
+.width90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .pt92 {
   padding-top: 92px;
 }
@@ -204,6 +209,7 @@
 }
 
 .form-control {
+  width:100%;
   padding-left: 2em;
 }
 
@@ -453,9 +459,9 @@ p {
  }
 }
 /* delivery location */
-.delivery-location {
-  width: 80%;
-  height: auto;
+
+.search-item-list {
+  width: 90%;
   margin: 0 auto;
 }
 

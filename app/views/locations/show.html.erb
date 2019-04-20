@@ -1,9 +1,11 @@
 <section class="customer pt92">
-  <input id="address" type="textbox" value="e.g. Tokyo">
-
-  <input type="button" value="Encode" onclick="codeAddress()">
-  <div id="map" style='width: 90%; height: 70%;'>
+  <h3 class="width90 wf-nicomoji mb8">We will deliver in 1 hour!</h3>
+  <div class="width90 description" style="color: red;">*you can't actually order through this service. Thanks for playing!!</div>
+  <div class"/search-item mb8">
+    <input id="address" class="form-control mb8 search-item-list wf-nicomoji" type="textbox" value="Input your address">
+    <input type="button" class="form-control btn-custom wf-nicomoji mb8 search-item-list" value="Search" onclick="codeAddress()">
   </div>
+  <div id="map" style="width: 90%; height: 70%;">
 </section>
 
 <script>
@@ -11,7 +13,6 @@ let map
 let geocoder
 
 function initMap(){
-  // geocoderを初期化
   geocoder = new google.maps.Geocoder()
 
   map = new google.maps.Map(document.getElementById('map'), {
@@ -21,16 +22,12 @@ function initMap(){
 }
 
 function codeAddress(){
-  // 入力を取得
+
   let inputAddress = document.getElementById('address').value;
 
-  // geocodingしたあとmapを移動
   geocoder.geocode( { 'address': inputAddress}, function(results, status) {
     if (status == 'OK') {
-　　　　　　　　　　　　// map.setCenterで地図が移動
       map.setCenter(results[0].geometry.location);
-
-　　　　　　　　　　　　// google.maps.MarkerでGoogleMap上の指定位置にマーカが立つ
       var marker = new google.maps.Marker({
           map: map,
           position: results[0].geometry.location
