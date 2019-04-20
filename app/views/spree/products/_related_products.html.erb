@@ -1,0 +1,26 @@
+<section class="row productsContent">
+  <div class="col-xs-12">
+    <div class="page-header">
+      <h4>関連商品</h4>
+    </div>
+  </div>
+  <div class="row">
+    <% products.each do |product| %>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="productBox">
+          <div class="productImage clearfix">
+            <%= link_to product_path(product.id) do %>
+            <%= image_tag product.display_image.attachment(:small) %>
+            <% end %>
+          </div>
+          <div class="productCaption clearfix">
+            <%= link_to product_path(product.id) do %>
+              <h5><%= product.name %></h5>
+            <% end %>
+            <h3><%= product.display_price %></h3>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

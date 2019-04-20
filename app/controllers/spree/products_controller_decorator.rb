@@ -1,5 +1,5 @@
-class Spree::ProductsController < ApplicationController
-  RELATED_PRODUCTS_LIMIT = 4
+Spree::ProductsController.class_eval do
+  RELATED_PRODUCTS_LIMIT = 3
 
   def show
     @product = Spree::Product.find(params[:id])
