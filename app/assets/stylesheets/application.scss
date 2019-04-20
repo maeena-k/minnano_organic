@@ -7,6 +7,10 @@
   color: #4d4d4d;
 }
 
+.pt92 {
+  padding-top: 92px;
+}
+
 .mr8 {
   margin-right: 8px;
 }
@@ -181,7 +185,7 @@
   position: relative;
   width: 100%;
   max-width: 480px;
-  height: 560px;
+  height: 600px;
   margin: 0 auto;
 }
 
@@ -192,7 +196,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   margin: 8px auto;
-  padding-top: 48px;
+  padding-top: 80px;
 }
 
 .has-feedback {
@@ -452,5 +456,9 @@ p {
 .delivery-location {
   width: 80%;
   height: auto;
+  margin: 0 auto;
+}
+
+#map {
   margin: 0 auto;
 }
