@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  get 'delivery', to: 'home#delivery'
   root to: 'home#index'
 
   # This line mounts Solidus's routes at the root of your application.
