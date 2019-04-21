@@ -12,7 +12,7 @@
       <% if spree_user_signed_in? %>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <%= link_to edit_customer_path(current_spree_user), class:'nav-link wf-nicomoji font-grey indent' do%>
+            <%= link_to "../customers/#{current_spree_user.id}", class:'nav-link wf-nicomoji font-grey indent' do%>
               Account
             <% end %>
           </li>

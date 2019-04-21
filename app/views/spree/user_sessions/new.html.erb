@@ -1,8 +1,7 @@
 <% @body_id = 'login' %>
 
-<%= render 'spree/shared/error_messages', target: resource %>
-
-<section class="customer">
+<section class="customer pt92">
+  <%= render 'spree/shared/error_messages', target: resource %>
   <div class="form container font-grey">
     <% if flash[:alert] %>
       <div class="alert alert-danger"><%= flash[:alert] %></div>

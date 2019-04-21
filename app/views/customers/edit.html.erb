@@ -16,7 +16,6 @@
       <%= f.password_field :password, class: 'form-control', type: 'password' %>
       <i class="fas fa-lock form-control-feedback"></i>
     </div>
-    <p class="description">*Leave blank unless you want to change it</p>
   </div>
 
   <div class="form-group">
@@ -27,25 +26,13 @@
     </div>
   </div>
 
-  <div class="form-group">
-    <%= f.label :current_password, 'Current Password', class: 'control-label wf-nicomoji' %>
-    <div class="form-item has-feedback">
-      <%= f.password_field :current_password, class: 'form-control', type: 'password' %>
-      <i class="fas fa-question-circle form-control-feedback"></i>
-    </div>
-    <p class="description">*We need it to confirm your changes</p>
-  </div>
-
   <p class="actions"><%= f.submit 'Update', class: 'btn btn-custom primary wf-nicomoji' %></p>
   <% end %>
+
+<hr>
 
 <h5 class="wf-nicomoji">Not happy with us...(TT)?</h5>
 
 <p>
-  <%= button_to "Cancel my account", customer_path, data: { confirm: "Are you sure?" }, method: :delete, class:"btn btn-custom primary wf-nicomoji" %></p>
-
-<%= link_to :back, class: 'wf-nicomoji font-grey description' do %>
-<i class="fa fa-reply" aria-hidden="true"></i>
-Back to the page you were viewing
-<% end %>
+  <%= button_to "Delete my account", customer_path, data: { confirm: "Are you sure?" }, method: :delete, class:"btn btn-custom primary wf-nicomoji" %></p>
 </section>
