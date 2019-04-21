@@ -1,6 +1,5 @@
-<%= render partial: 'spree/shared/error_messages', locals: { target: @spree_user } %>
-
-<section class="customer">
+<section class="customer pt92">
+  <%= render partial: 'spree/shared/error_messages', locals: { target: @spree_user } %>
   <div class="form container font-grey">
     <% if flash[:alert] %>
       <div class="flash errors"><%= flash[:alert] %></div>
