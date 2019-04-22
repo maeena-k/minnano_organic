@@ -70,7 +70,7 @@ gem 'solidus'
 gem 'solidus_auth_devise'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
-gem 'solidus_auth_devise'
 gem 'gmaps4rails'
 gem 'geocoder'
+gem 'rubocop', require: false
 gem 'rubocop-airbnb'

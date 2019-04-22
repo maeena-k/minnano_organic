@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # This migration comes from spree (originally 20180322142651)
 
 class AddAmountRemainingToStoreCreditEvents < ActiveRecord::Migration[5.0]
