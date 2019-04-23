@@ -20,7 +20,6 @@ Minnano Organic is a platform of fresh salad delivery service for organic food l
 ```gem install bundler```<br>
 ```brew install libxml2```<br>
 ```bundle config build.nokogiri --use-system-libraries --with-xml2-include=$(brew --prefix libxml2)/include/libxml2```<br>
-
 ```bundle install```
 
 4. Create necessary configuration files and migrations.<br>
