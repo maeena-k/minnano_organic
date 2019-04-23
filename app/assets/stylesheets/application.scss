@@ -324,13 +324,13 @@
   align-items: center;
   align-content: center;
   height: auto;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .product-box {
   height: auto;
-  min-width: 30%;
+  min-width: 33%;
   margin-bottom: 16px;
   text-align: center;
 }
@@ -385,7 +385,7 @@ p {
 
   }
 }
-/* oreders page */
+/* orders page */
 .cart-container {
   width: 95%;
   height: auto;
@@ -457,32 +457,36 @@ p {
 }
 /* filter */
 .filter {
-  width: 95%;
+  width: 100%;
   height: auto;
-  text-align: center;
   margin: 0 auto 16px;
 }
 @media screen and (min-width: 768px) {
   .filter-nav {
-    width: 95%;
+    width: 67%;
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin-right: auto;
   }
 
   .filter-nav-item {
-    width: 33%;
-    margin: 0 auto;
+    width: 50%;
+    max-width: 240px;
+  }
+  .filter-nav-item a {
+    width: auto;
+    text-align: left;
   }
 
   .collapseItem li {
     list-style: none;
-    text-indent: 0.5em;
+    text-indent: 2em;
   }
 }
 @media screen and (max-width: 767px) {
   .filter-nav {
-    width: 70%;
+    width: 100%;
+    max-width: 240px;
     margin: 0 auto;
     text-align: left;
   }
@@ -492,11 +496,17 @@ p {
     margin-bottom: 8px;
   }
 
+  .filter-nav-item a {
+    width: auto;
+    text-align: left;
+    margin: 0 auto;
+  }
+
   .collapseItem li {
     list-style: none;
     text-align: left;
     width: 100%;
-    text-indent: 0.5em;
+    text-indent: 2em;
   }
 }
 /* related-products */

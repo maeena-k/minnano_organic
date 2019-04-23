@@ -110,6 +110,11 @@ GEM
       activerecord (>= 4.2, < 6)
     erubi (1.8.0)
     execjs (2.7.0)
+    factory_bot (4.10.0)
+      activesupport (>= 3.0.0)
+    factory_bot_rails (4.10.0)
+      factory_bot (~> 4.10.0)
+      railties (>= 3.0.0)
     ffi (1.10.0)
     font-awesome-rails (4.7.0.4)
       railties (>= 3.2, < 6.0)
@@ -408,6 +413,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  factory_bot_rails
   geocoder
   gmaps4rails
   jbuilder (~> 2.5)
