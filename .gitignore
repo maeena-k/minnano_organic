@@ -33,5 +33,5 @@
 fuse_hidden*
 .fuse_hidden*
 
-_api.html.erb
-paperclip.rb
+/app/views/locations/_api.html.erb
+/config/initializers/paperclip.rb
