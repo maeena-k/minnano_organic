@@ -75,3 +75,4 @@ gem 'gmaps4rails'
 gem 'geocoder'
 gem 'rubocop', require: false
 gem 'rubocop-airbnb'
+gem 'fog-aws'
