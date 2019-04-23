@@ -1,0 +1,12 @@
+<section class="customer pt92 font-grey">
+  <%= link_to :back, class: 'wf-nicomoji font-grey description' do %>
+  <i class="fa fa-reply" aria-hidden="true"></i>
+  Back to the page you were viewing
+  <% end %>
+  <hr>
+  <h2 class="wf-nicomoji font-grey">Your Email</h2>
+  <p class="wf-nicomoji"><%= "#{@user.email}" %></p>
+  <%= link_to edit_customer_path(@user), class: 'btn btn-custom primary wf-nicomoji' do %>Update Your Info<% end %>
+  <p class="description">*You can change your password too.</p>
+
+</section>

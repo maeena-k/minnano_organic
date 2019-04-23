@@ -1,0 +1,38 @@
+<section class="customer pt92 font-grey">
+  <h2 class="wf-nicomoji font-grey">Edit Your Info</h2>
+
+  <%= form_for(@user, url: customer_path) do |f| %>
+  <div class="form-group">
+    <%= f.label :email, 'Email', class: 'control-label wf-nicomoji' %>
+    <div class="form-item has-feedback">
+      <%= f.email_field :email, class: 'form-control', type: 'email' %>
+      <i class="fas fa-envelope form-control-feedback"></i>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password, 'New Password', class: 'control-label wf-nicomoji' %>
+    <div class="form-item has-feedback">
+      <%= f.password_field :password, class: 'form-control', type: 'password' %>
+      <i class="fas fa-lock form-control-feedback"></i>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password_confirmation, 'Confirmation', class: 'control-label wf-nicomoji' %>
+    <div class="form-item has-feedback">
+      <%= f.password_field :password_confirmation, class: 'form-control', type: 'password' %>
+      <i class="fas fa-check-circle form-control-feedback"></i>
+    </div>
+  </div>
+
+  <p class="actions"><%= f.submit 'Update', class: 'btn btn-custom primary wf-nicomoji' %></p>
+  <% end %>
+
+<hr>
+
+<h5 class="wf-nicomoji">Not happy with us...(TT)?</h5>
+
+<p>
+  <%= button_to "Delete my account", customer_path, data: { confirm: "Are you sure?" }, method: :delete, class:"btn btn-custom primary wf-nicomoji" %></p>
+</section>

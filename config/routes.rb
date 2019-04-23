@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # We ask that you don't use the :as option here, as Solidus relies on it being the default of "spree"
   mount Spree::Core::Engine, at: '/'
   resources :categories, only: %i[show index]
+  resources :customers,  only: %i[show edit update destroy]
   get 'location', to: 'locations#show'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
