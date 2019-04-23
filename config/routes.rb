@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root to: 'home#index'
   get '/how-to-use', to: 'home#about'
-  resources :categories, only: %i[show index]
-  resources :customers,  only: %i[show edit update destroy]
+  resources :categories, only: %i(show index)
+  resources :customers,  only: %i(show edit update destroy)
   get 'location', to: 'locations#show'
   # This line mounts Solidus's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.

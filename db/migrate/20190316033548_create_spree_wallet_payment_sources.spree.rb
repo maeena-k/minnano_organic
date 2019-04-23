@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # This migration comes from spree (originally 20160420044191)
 
 class CreateSpreeWalletPaymentSources < ActiveRecord::Migration[4.2]

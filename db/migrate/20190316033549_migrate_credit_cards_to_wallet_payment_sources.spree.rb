@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # This migration comes from spree (originally 20160420181916)
 
 class MigrateCreditCardsToWalletPaymentSources < ActiveRecord::Migration[4.2]

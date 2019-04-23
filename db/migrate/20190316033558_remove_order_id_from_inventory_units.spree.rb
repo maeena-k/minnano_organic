@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # This migration comes from spree (originally 20170319191942)
 
 class RemoveOrderIdFromInventoryUnits < ActiveRecord::Migration[5.0]

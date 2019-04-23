@@ -18,7 +18,6 @@ Spree.config do |config|
   # any inventory changes.
   # config.inventory_cache_threshold = 3
 
-
   # Frontend:
 
   # Custom logo for the frontend
@@ -26,7 +25,6 @@ Spree.config do |config|
 
   # Template to use when rendering layout
   # config.layout = "spree/layouts/spree_application"
-
 
   # Admin:
 
