@@ -13,9 +13,9 @@ class CustomersController < ApplicationController
     @user = Spree::User.find_by(id: current_spree_user.id)
     if @user.update_attributes(user_edit_params)
       sign_in @user
-      redirect_to customer_url
+      redirect_to root_url
     else
-      render customer_path
+      render edit_customer_path
     end
   end
 

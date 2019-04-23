@@ -1,4 +1,5 @@
 <section class="customer pt92 font-grey">
+  <%= render 'spree/shared/error_messages', target: resource %>
   <h2 class="wf-nicomoji font-grey">Edit Your Info</h2>
 
   <%= form_for(@user, url: customer_path) do |f| %>
