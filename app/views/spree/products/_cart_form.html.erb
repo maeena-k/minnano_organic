@@ -42,6 +42,8 @@
       <p>Quantity:
         <%= number_field_tag :quantity, 1, min: 1, class: 'quantity-form';%>
       </p>
+
+ 
       <%= button_tag class: 'btn btn-custom', id: 'add-to-cart-button', type: :submit do %>
         <%= t('spree.add_to_cart') %>
       <% end %>
