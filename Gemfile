@@ -70,4 +70,3 @@ gem 'solidus'
 gem 'solidus_auth_devise'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
-gem "solidus_auth_devise"
