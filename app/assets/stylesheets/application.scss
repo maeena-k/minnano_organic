@@ -1,7 +1,9 @@
+
 /* Global */
 .wf-nicomoji {
   font-family: "Nico Moji";
 }
+
 
 /*↓↓↓　bootstrap setting ↓↓↓*/
 @import "bootstrap";
@@ -25,6 +27,7 @@
   margin-left: 50%;
   padding-right: 4px;
   justify-content: flex-end;
+
   z-index: 10;
 }
 
@@ -238,6 +241,7 @@
   border: solid 2px #f0f0f0;
 }
 
+
 .quantity-form {
   width: 20%;
   border: solid 1px #e6e6e6;
@@ -259,6 +263,7 @@ li,
 p {
   width: 100%;
 }
+
 @media screen and (min-width:768px) {
   .media-column-left {
     width: 30%;
@@ -270,6 +275,7 @@ p {
 
   .media-column-right {
     width: 20%;
+
   }
 }
 
