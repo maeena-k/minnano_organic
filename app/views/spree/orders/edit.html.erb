@@ -1,46 +1,37 @@
 <% @body_id = 'cart' %>
-<div data-hook="cart_container">
-  <h1><%= t('spree.shopping_cart') %></h1>
+  <section class="cart-container">
 
-  <% if @order.line_items.empty? %>
+    <% if @order.line_items.empty? %>
 
-    <div data-hook="empty_cart">
-      <p><%= t('spree.your_cart_is_empty') %></p>
-      <p><%= link_to t('spree.continue_shopping'), products_path, class: 'button continue' %></p>
-    </div>
+      <div>
+        <h1 class="wf-nicomoji"><%= t('spree.your_cart_is_empty') %></h1>
+        <p><%= link_to t('spree.continue_shopping'), products_path, class: 'btn btn-custom wf-nicomoji' %></p>
+      </div>
 
-  <% else %>
+    <% else %>
 
-    <div data-hook="outside_cart_form">
       <%= form_for @order, url: update_cart_path, html: {id: 'update-cart'} do |order_form| %>
-        <div data-hook="inside_cart_form">
-
-          <div data-hook="cart_items">
-            <%= render 'spree/orders/form', order_form: order_form %>
-          </div>
-
-          <div class="links columns sixteen alpha omega" data-hook="cart_buttons">
-            <%= button_tag t("spree.update"), class: "primary", id: "update-button" %>
-
-            <%= button_tag class: 'button checkout primary', id: 'checkout-link', name: 'checkout' do %>
-              <%= t('spree.checkout') %>
-            <% end %>
-          </div>
-        </div>
+      <div class='checkout-link'>
+        <h2 class="wf-nicomoji">Total:
+          <%= @order.display_total %>
+        </h2>
+        <%= button_tag class: 'btn btn-custom primary wf-nicomoji', id: 'checkout-link', name: 'checkout' do %>
+        <%= t('spree.checkout') %>
       <% end %>
-    </div>
-
-    <div id="empty-cart" data-hook>
-      <%= form_tag empty_cart_path, method: :put do %>
-        <p id="clear_cart_link" data-hook>
-        <%= submit_tag t('spree.empty_cart'), class: 'button gray' %>
-        <%= t('spree.or') %>
-        <%= link_to t('spree.continue_shopping'), products_path, class: 'continue button gray' %>
-        </p>
+      </div>
+      <hr>
+      <div class="cart-form">
+        <%= render 'spree/orders/form', order_form: order_form %>
+        <%= button_tag t("spree.update"), class: "btn btn-custom wf-nicomoji", id: "update-button" %>
+      </div>
       <% end %>
 
-      <%= render template: 'spree/coupon_codes/new' %>
-    </div>
+      <div class="empty-cart">
+        <%= form_tag empty_cart_path, method: :put do %>
+          <p><%= submit_tag t('spree.empty_cart'), class: 'btn btn-custom wf-nicomoji' %></p>
+          <p><%= link_to t('spree.continue_shopping'), products_path, class: 'btn btn-custom wf-nicomoji' %></p>
+        <% end %>
+      </div>
 
-  <% end %>
-</div>
+    <% end %>
+  </section>

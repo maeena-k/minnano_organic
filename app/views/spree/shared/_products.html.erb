@@ -32,11 +32,11 @@
             <% end %>
           </p>
           <p class="product-name wf-nicomoji">
-            <%= link_to product_path(product.id) do%>
+            <%= link_to product_path(product.id), class: 'font-grey' do%>
               <%= product.name %>
             <% end %>
           </p>
-          <p class="product-price wf-nicomoji"><%= product.display_price %></p>
+          <p class="product-price wf-nicomoji font-grey"><%= product.display_price %></p>
       </div>
     <% end %>
     <% reset_cycle("classes") %>

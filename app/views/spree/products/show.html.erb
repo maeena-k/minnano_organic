@@ -23,21 +23,22 @@
         <div class="media-column media-column-middle">
           <ul class="list-inline">
             <li>
-              <a href="../products" class="wf-nicomoji">
+
+              <a href="../products" class="wf-nicomoji font-grey">
+
                 <i class="fa fa-reply" aria-hidden="true"></i> Back to product list
               </a>
             </li>
           </ul>
           <h2 class="wf-nicomoji"><%= @product.name %></h2>
           <h3 class="wf-nicomoji"><%= @product.display_price %></h3>
-          <p class="discription"><%= @product.description %></p>
+          <p class="discription font-grey"><%= @product.description %></p>
         </div>
         <div id="cart-form" data-hook="cart_form" class="media-column media-column-right">
           <%= render partial: 'cart_form' %>
         </div>
       </div>
       <%= render partial: 'taxons' %>
-
     </div>
   </div>
 </section>
