@@ -1,4 +1,6 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_spree_user!
+
   def show
     @taxon = Spree::Taxon.find(params[:id])
     @products = Spree::Product.in_taxon(@taxon).including_master
