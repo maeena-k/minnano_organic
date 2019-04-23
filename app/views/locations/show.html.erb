@@ -1,10 +1,11 @@
-<section class="customer pt92">
+<section class="search pt92">
   <h3 class="width90 wf-nicomoji mb8">We will deliver in 1 hour!</h3>
   <div class="width90 description" style="color: red;">*you can't actually order through this demo service (TT). Thanks for playing!!</div>
   <div class"/search-item mb8">
     <input id="address" class="form-control mb8 search-item-list wf-nicomoji" type="textbox" value="Input your address">
     <input type="button" class="form-control btn-custom wf-nicomoji mb8 search-item-list" value="Search" onclick="codeAddress()">
   </div>
+  <hr>
   <div id="map" style="width: 90%; height: 70%;">
 </section>
 
@@ -18,6 +19,10 @@ function initMap(){
   map = new google.maps.Map(document.getElementById('map'), {
   center: {lat: 35.6935495, lng: 139.7092768},
   zoom: 15
+  });
+  marker = new google.maps.Marker({
+        position: {lat: 35.6935495, lng: 139.7092768},
+      map: map
   });
 }
 
@@ -38,4 +43,4 @@ function codeAddress(){
   });
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp95nXZ5viHT6w8cBGdMo1fbqiKw-Bh-0&callback=initMap" async defer></script>
+<%= render 'api'%>

@@ -32,3 +32,5 @@
 
 fuse_hidden*
 .fuse_hidden*
+
+/locations/_api.html.erb
