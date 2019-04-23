@@ -1,0 +1,7 @@
+<section class="product-index">
+  <%= render 'filter', taxonomies: @taxonomies %>
+
+  <div class="products">
+  <%= render partial: 'spree/shared/products', locals: { products: @products, taxon: @taxon } %>
+  </div>
+</section>

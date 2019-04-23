@@ -5,7 +5,7 @@
 
       <div>
         <h1 class="wf-nicomoji"><%= t('spree.your_cart_is_empty') %></h1>
-        <p><%= link_to t('spree.continue_shopping'), products_path, class: 'btn btn-custom wf-nicomoji' %></p>
+        <p><%= link_to t('spree.continue_shopping'), "/categories", class: 'btn btn-custom wf-nicomoji' %></p>
       </div>
 
     <% else %>
@@ -29,7 +29,7 @@
       <div class="empty-cart">
         <%= form_tag empty_cart_path, method: :put do %>
           <p><%= submit_tag t('spree.empty_cart'), class: 'btn btn-custom wf-nicomoji' %></p>
-          <p><%= link_to t('spree.continue_shopping'), products_path, class: 'btn btn-custom wf-nicomoji' %></p>
+          <p><%= link_to t('spree.continue_shopping'), "/categories", class: 'btn btn-custom wf-nicomoji' %></p>
         <% end %>
       </div>
 

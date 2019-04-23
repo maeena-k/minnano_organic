@@ -5,10 +5,16 @@
 }
 
 
+.mr8 {
+  margin-right: 8px;
+}
+
+
 /*↓↓↓　bootstrap setting ↓↓↓*/
 @import "bootstrap";
 /* Header */
 .header {
+  width: 100%;
   height: 5em;
   background-color: #87992f;
   position: fixed;
@@ -36,15 +42,23 @@
 }
 
 .nav-right {
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-right: 4px;
 }
 
-.nav-left {
-  display: flex;
-  align-items: center;
+.navbar-brand img {
+  width: 75px;
+  height: 50px;
+}
+
+@media screen and (max-width:320px) {
+  .navbar-brand img {
+    width: 51px;
+    height: 34px;
+  }
 }
 
 .navbar-toggler-icon {
@@ -64,7 +78,6 @@
 .btn-custom {
   background-color: #e6e6e6;
   text-align: center;
-  margin-right: 8px;
 }
 /* Footer */
 .footer {
@@ -72,7 +85,7 @@
   padding: 8px;
   background-color: #87992f;
   width: 100%;
-  height:auto
+  height: auto;
 }
 
 .copyright {
@@ -98,13 +111,13 @@
 }
 
 .is-big {
-  width: 200px;
-  font-size: 1.5em;
+  width: 300px;
+  font-size: 1.0em;
   padding: 16px 24px;
 }
 
 .title {
-  font-size: 4em;
+  font-size: 3.5em;
   color: #ffffff;
   margin-bottom: 8px;
 }
@@ -129,11 +142,19 @@
   color: #383838;
 }
 
+@media screen and (min-width: 769px){
 .level-item {
-  width: 360px;
+  width: 30%;
   height: auto;
 }
+}
 
+@media screen and (max-width: 768px){
+.level-item {
+  width: 100%;
+  height: auto;
+}
+}
 .subtitle {
   font-size: 2em;
   text-align: center;
@@ -278,12 +299,11 @@ p {
 
   }
 }
-
 /* oreders page */
 .cart-container {
   width: 95%;
   height: auto;
-  padding-top: 80px;
+  padding-top: 84px;
   margin: 0 auto;
 }
 
@@ -300,7 +320,6 @@ p {
   justify-content: space-around;
   align-items: center;
 }
-
 @media screen and (min-width:768px) {
   .checkout-link {
     width: 100%;
@@ -323,7 +342,6 @@ p {
     width: 20%;
   }
 }
-
 @media screen and (max-width:767px) {
   .checkout-link {
     width: 100%;
@@ -350,4 +368,49 @@ p {
 
 .empty-cart {
   width: 95%;
+}
+/* filter */
+.filter {
+  width: 95%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto 16px;
+}
+@media screen and (min-width: 768px) {
+  .filter-nav {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .filter-nav-item {
+    width: 33%;
+    margin: 0 auto;
+  }
+
+  .collapseItem li {
+    list-style: none;
+    text-indent: 0.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter-nav {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .filter-nav-item {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .collapseItem li {
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    text-indent: 0.5em;
+  }
 }
