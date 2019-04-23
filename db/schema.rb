@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_21_153207) do
+ActiveRecord::Schema.define(version: 2019_04_20_144247) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -33,6 +33,14 @@ ActiveRecord::Schema.define(version: 2019_03_21_153207) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "articles", force: :cascade do |t|
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -44,6 +52,14 @@ ActiveRecord::Schema.define(version: 2019_03_21_153207) do
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
     t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
     t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+  end
+
+  create_table "locations", force: :cascade do |t|
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "spree_addresses", force: :cascade do |t|
@@ -1107,6 +1123,9 @@ ActiveRecord::Schema.define(version: 2019_03_21_153207) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string "name"
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
     t.index ["deleted_at"], name: "index_spree_users_on_deleted_at"
     t.index ["email"], name: "email_idx_unique", unique: true
     t.index ["spree_api_key"], name: "index_spree_users_on_spree_api_key"

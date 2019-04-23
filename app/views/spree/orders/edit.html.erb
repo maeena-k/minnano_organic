@@ -15,7 +15,7 @@
         <h2 class="wf-nicomoji">Total:
           <%= @order.display_total %>
         </h2>
-        <%= button_tag class: 'btn btn-custom primary wf-nicomoji', id: 'checkout-link', name: 'checkout' do %>
+        <%= link_to '../location', class: 'btn btn-custom primary wf-nicomoji' do %>
         <%= t('spree.checkout') %>
       <% end %>
       </div>
