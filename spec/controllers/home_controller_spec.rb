@@ -6,7 +6,7 @@ RSpec.describe HomeController, type: :controller do
       get :index
     end
 
-    it 'responds successfully on index page' do
+    it 'responds successfully' do
       expect(response).to be_successful
     end
 
@@ -20,7 +20,7 @@ RSpec.describe HomeController, type: :controller do
       get :about
     end
 
-    it 'responds successfully on index page' do
+    it 'responds successfully' do
       expect(response).to be_successful
     end
 
