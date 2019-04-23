@@ -54,7 +54,6 @@
 
 .message {
   background-color: transparent;
-  padding-left: 2em;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -115,4 +114,28 @@
 
 .description {
   font-size: 0.8em;
+}
+
+/* Signup & Login */
+.customer {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  height: 560px;
+  margin: 0 auto 0 auto;
+
+}
+
+.form {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin-top: 16px;
+}
+
+.field,.form-item, .input {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 350px;
 }
