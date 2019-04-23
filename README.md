@@ -1,24 +1,31 @@
-# README
+Minnano Organic
+====
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Minnano Organic is a platform of fresh salad delivery service for organic food lovers. *Designed as a demo site for personal practice.
 
-Things you may want to cover:
+## Development Environment
 
-* Ruby version
+- Ruby on Rails
+- Solidus(Rails gem)
+- MySQL
 
-* System dependencies
+## 5 steps to install
 
-* Configuration
+1. Install ImageMagik through Homebrew (For product image upload)<br>
+<code>brew install imagemagick</code>
 
-* Database creation
+2. Folk and clone this project to your PC.
 
-* Database initialization
+3. Install libraries
+```gem install bundler```<br>
+```brew install libxml2```<br>
+```bundle config build.nokogiri --use-system-libraries --with-xml2-include=$(brew --prefix libxml2)/include/libxml2```<br>
+<br>
+```bundle install```
 
-* How to run the test suite
+4. Create necessary configuration files and migrations.
+```bundle exec rails g spree:install```<br>
+```bundle exec rails g solidus:auth:install```<br>
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+5. Preview by rails server
+```bundle exec rails s```
