@@ -1,7 +1,10 @@
 Minnano Organic
 ====
 
-Minnano Organic is a platform of fresh salad delivery service for organic food lovers. *Designed as a demo site for personal practice.
+Minnano Organic is a platform of fresh salad delivery service for organic food lovers. 
+*Designed as a demo site for personal practice.
+
+<a href="https://minnano-organic.herokuapp.com/" target="_blank">https://minnano-organic.herokuapp.com/</a>
 
 ## Development Environment
 
